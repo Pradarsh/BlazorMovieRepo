@@ -41,26 +41,7 @@
     protected override async Task OnInitializedAsync()
     {
         Alert = string.Empty;
-        /*
-        var course = await AdminService.SingleAsync<CourseDTO>($"courses/1");
-            await AdminService.CreateAsync<CourseCreateDTO>($"courses", 
-            new CourseCreateDTO { 
-            Description = "fdkg", ImageUrl = "URL", 
-            InstructorId = 1, MarqueeUrl ="URL", Title = "Title" });
-
-        await AdminService.EditAsync<CourseEditDTO>($"courses/5",
-                 new CourseEditDTO
-                 {
-                 Id = 5,
-                 Description = "updated descr.",
-                 ImageUrl = "updated URL",
-                 InstructorId = 1,
-                 MarqueeUrl = "updated URL",
-                 Title = "updated Title"
-        });
-
-        await AdminService.DeleteAsync<CourseDTO>($"courses/5");
-        */
+        
         Model = await AdminService.GetAsync<DirectorDTO>($"director");
     }
 
