@@ -1,0 +1,13 @@
+﻿@using Movie.UI.Pages.Directors
+@page "/{Route}"
+<h3>@Route</h3>
+
+@if (Route == Routes.Directors)
+{
+    <DirectorsPortal />
+}
+
+
+@code {
+    [Parameter] public string Route { get; set; } = string.Empty;
+}
