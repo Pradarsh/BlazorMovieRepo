@@ -3,6 +3,7 @@
 public static class Routes
 {
     public static string Directors => "Directors";
+    public static string Genres => "Genres";
     public static string Films => "Films";
     public static string Register => "Register";
 }

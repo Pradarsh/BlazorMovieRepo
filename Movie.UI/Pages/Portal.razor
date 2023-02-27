@@ -1,4 +1,6 @@
 ﻿@using Movie.UI.Pages.Directors
+@using Movie.UI.Pages.Films
+@using Movie.UI.Pages.Genres
 @page "/{Route}"
 <h3>@Route</h3>
 
@@ -6,6 +8,13 @@
 {
     <DirectorsPortal />
 }
+
+@if (Route == Routes.Films)
+{
+    <FilmsPortal />
+}
+
+
 
 
 @code {
